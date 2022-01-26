@@ -1,0 +1,3 @@
+﻿  bub sort2.cpp
+C:\Users\s218005\Documents\GitHub\bub sort2\bub sort2\bub sort2.cpp(75,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  bub sort2.vcxproj -> C:\Users\s218005\Documents\GitHub\bub sort2\Debug\bub sort2.exe
