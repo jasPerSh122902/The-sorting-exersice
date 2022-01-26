@@ -70,11 +70,29 @@ void insertSort()
 	for (valueHolder = 0; valueHolder < 4; valueHolder++)
 		cout << a[valueHolder] << endl;
 }
-template <typename T>
+
+void printDynamicArray(DynamicArray<int> arr)
+{
+	for (int i = 0; i < arr.getLength(); i++)
+		std::cout << arr.getItem(i) << std::endl;
+}
 void main()
 {
-	DynamicArray* m_dynamicArray =  DynamicArray();
-	
-	float arrFloat[] = { 1.2f, 4.9f, 9.9f,-12.9f };
+	//is just a array of floats
+	//float arrFloat[] = { 1.2f, 4.9f, 9.9f,-12.9f };
+	DynamicArray<int> m_dynamicArray = DynamicArray<int>();
 
+	m_dynamicArray.addItem(1);
+	m_dynamicArray.addItem(2);
+	m_dynamicArray.addItem(3);
+	m_dynamicArray.addItem(3);
+	m_dynamicArray.addItem(4);
+
+	printDynamicArray(m_dynamicArray);
+
+	m_dynamicArray.removeItem(2);
+	std::cout << std::endl;
+
+	m_dynamicArray.sortItem();
+	printDynamicArray(m_dynamicArray);
 }
